@@ -1,0 +1,11 @@
+{
+  "short_name": "Ohmyfood!",
+  "name": "Ohmyfood! - Découvrez des restaurants d'exceptions séléctionnés par nos soins",
+  "icons": [
+    {"src":"android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
+    {"src":"android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}
