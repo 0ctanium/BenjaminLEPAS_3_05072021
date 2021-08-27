@@ -1,0 +1,221 @@
+.back__btn {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .4s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999999px;
+}
+
+body {
+  background: #fafafa;
+}
+.back__btn svg {
+  color: black;
+  width: 1rem !important;
+  height: 1rem !important;
+  transform: scale(1);
+  transition: .4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.back__btn:focus {
+  background: rgba(0,0,0,0.1);
+}
+.back__btn:hover svg {
+  color: #444;
+  transform: scale(1.1);
+}
+
+.hero__img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 32rem;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  z-index: 5;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background: white;
+  max-width: 640px;
+  margin: -5% auto 0;
+  box-shadow: .5rem .5rem .75rem .1rem rgba(0,0,0,0.15);
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .menu {
+    border-radius: 2rem;
+    margin-bottom: 6rem;
+    padding: 2rem 1.75rem 3rem 1.75rem;
+  }
+}
+
+.section__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-right: .5rem;
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+.category__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.category__title::after {
+  content: '';
+  display: block;
+  height: .25rem;
+  width: 3rem;
+  background: var(--accent-color);
+}
+
+.items__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.items__list > * {
+  animation: .6s cubic-bezier(0.4, 0, 0.2, 1) fadeIn;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+.items__list > *:nth-child(1) {
+  animation-delay: .2s;
+}
+.items__list > *:nth-child(2) {
+  animation-delay: .4s;
+}
+.items__list > *:nth-child(3) {
+  animation-delay: .6s;
+}
+.items__list > *:nth-child(4) {
+  animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+  from {
+    display: none;
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.item {
+  position: relative;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.75rem 0.1rem rgb(0 0 0 / 8%);
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.item:hover {
+  background: #F5EDFF
+}
+
+.item input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+.item__container {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.item input[type="checkbox"]:checked + .item__container .item__selected {
+  transform: translateX(0rem);
+  margin-left: 0;
+}
+.item input[type="checkbox"]:checked + .item__container .item__selected svg {
+  animation: .6s cubic-bezier(0.4, 0, 0.2, 1) rotate;
+}
+
+.item__selected {
+  display: flex;
+  width: 4rem;
+  transform: translateX(4rem);
+  margin-left: -4rem;
+  justify-content: center;
+  align-items: center;
+  background: var(--accent-color);
+  color: white;
+  transition-property: transform, margin-left;
+  transition: .6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item__selected svg {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  animation: .6s cubic-bezier(0.4, 0, 0.2, 1) rotate-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.item__content {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: .75rem 1.25rem;
+  gap: 1rem;
+}
+
+.item__info {
+  min-width: 0;
+}
+
+.item__name {
+  margin-bottom: .1rem;
+}
+.item__name, .item__desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item__name, .item__price {
+  font-weight: 500;
+}
+
+.command_button__container {
+  width: 100%;
+  text-align: center;
+}
+
+.command_button {
+  width: 16rem;
+}
