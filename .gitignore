@@ -11,4 +11,4 @@ node_modules
 
 # mac
 /**/.DS_store
-dist
+#dist
