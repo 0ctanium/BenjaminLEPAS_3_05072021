@@ -47,7 +47,7 @@
       content: "";
       box-sizing: border-box;
       margin: -1.75rem;
-      border: solid 2.25rem var(--secondary-color);
+      border: solid 2.25rem $secondary-color;
       width: 3.5rem;
       height: 3.5rem;
       transform: scale(0);
@@ -78,7 +78,7 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        background: linear-gradient(to top right, var(--secondary-color), var(--primary-color));
+        background: linear-gradient(to top right, $secondary-color), var(--primary-color);
         opacity: 0;
         transform: scale(0);
         transition: transform 0.15s cubic-bezier(.17, .89, .32, 1.49), opacity 0.15s cubic-bezier(.17, .89, .32, 1.49);
@@ -105,12 +105,12 @@
 @keyframes bubble {
   15% {
     transform: scale(1);
-    border-color: var(--primary-color);
+    border-color: $primary-color;
     border-width: 1.75rem;
   }
   30%, 100% {
     transform: scale(1);
-    border-color: var(--primary-color);
+    border-color: $primary-color;
     border-width: 0;
   }
 }

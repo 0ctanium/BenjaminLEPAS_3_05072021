@@ -1,7 +1,7 @@
 .btn__gradient {
   position: relative;
   z-index: 1;
-  background: linear-gradient(to bottom right, var(--secondary-color), var(--primary-transition), var(--primary-color));
+  background: linear-gradient(to bottom right, $secondary-color), var(--primary-transition), var(--primary-color);
   background-position-x: 0;
   background-size: 200% 100%;
   color: white;

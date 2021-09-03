@@ -23,7 +23,7 @@
     background: #F5EDFF;
 
     .step__icon {
-      color: var(--primary-color);
+      color: $primary-color;
     }
   }
 
@@ -44,7 +44,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    background: var(--secondary-color);
+    background: $secondary-color;
     width: 1.5rem;
     height: 1.5rem;
     line-height: 1.5rem;

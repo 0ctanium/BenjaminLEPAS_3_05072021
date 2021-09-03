@@ -106,7 +106,7 @@
     margin-left: -4rem;
     justify-content: center;
     align-items: center;
-    background: var(--accent-color);
+    background: $accent-color;
     color: white;
     transition-property: transform, margin-left;
     transition: .6s cubic-bezier(0.4, 0, 0.2, 1);

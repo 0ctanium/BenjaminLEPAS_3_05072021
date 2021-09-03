@@ -41,7 +41,7 @@
     }
 
     .card__tag {
-      background: var(--accent-color);
+      background: $accent-color;
       padding: .25rem .75rem;
       position: absolute;
       top: 1rem;

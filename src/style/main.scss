@@ -1,17 +1,17 @@
-@use 'utilities/variables';
+@import 'utilities/variables';
 
-@use 'base/normalize';
-@use 'base/base';
+@import 'base/normalize';
+@import 'base/base';
 
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/container';
 
-@use 'components/card';
-@use 'components/step';
-@use 'components/like';
-@use 'components/button';
-@use 'components/item';
+@import 'components/card';
+@import 'components/step';
+@import 'components/like';
+@import 'components/button';
+@import 'components/item';
 
-@use 'pages/home';
-@use 'pages/restaurant';
+@import 'pages/home';
+@import 'pages/restaurant';
