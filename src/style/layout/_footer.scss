@@ -1,0 +1,37 @@
+.footer {
+  background: rgb(56,56,56);
+  padding: 1.5rem;
+
+  @media (min-width: 640px) {
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  width: 40%;
+  max-width: 196px;
+  margin-bottom: 1rem;
+}
+
+.footer__logo, .footer__logo path {
+  color: white;
+  fill: white;
+}
+
+.footer__nav > li {
+  list-style-type: none;
+  margin-bottom: .5rem;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    svg {
+      margin-right: .5rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

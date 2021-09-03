@@ -1,0 +1,39 @@
+body {
+  background: white;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  background: rgb(233, 233, 233);
+  width: 100%;
+  height: 4rem;
+}
+
+.hero {
+  background: #F6F6F6;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hero__title {
+  margin-bottom: .5rem;
+}
+
+.hero__desc {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.steps {
+  max-width: 475px;
+  margin: 0 auto;
+}
+
+.container.restaurants {
+  background: #F6F6F6;
+}

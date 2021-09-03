@@ -1,0 +1,71 @@
+body {
+  background: #fafafa;
+}
+
+.hero__img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 32rem;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  z-index: 5;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background: white;
+  max-width: 640px;
+  margin: -5% auto 0;
+  box-shadow: .5rem .5rem .75rem .1rem rgba(0,0,0,0.15);
+
+  @media (min-width: 640px) {
+    border-radius: 2rem;
+    margin-bottom: 6rem;
+    padding: 2rem 1.75rem 3rem 1.75rem;
+  }
+}
+
+.restaurant__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-right: .5rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.category {
+  margin-bottom: 3rem;
+
+  .category__title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+
+    &::after {
+      content: '';
+      display: block;
+      height: .25rem;
+      width: 3rem;
+      background: var(--accent-color);
+    }
+  }
+}
+
+.command_button__container {
+  width: 100%;
+  text-align: center;
+}
+
+.command_button {
+  width: 16rem;
+}
