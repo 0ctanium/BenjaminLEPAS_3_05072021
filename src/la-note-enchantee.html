@@ -10,10 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ohmyfood.com">
   <meta property="og:description" content="Découvrez des restaurants d'exceptions séléctionnés par nos soins">
-  <!--  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"> -->
-  <!--  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"> -->
-  <!--  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"> -->
-  <!--  <link rel="manifest" href="./site.webmanifest"> -->
+  <link rel="manifest" href="./site.webmanifest">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="style/main.scss">
@@ -258,5 +255,34 @@
     <li><a href="mailto: johndoe@example.com">Contact</a></li>
   </ul>
 </footer>
+<script>
+  const sw = "service-worker.js"; // it is needed because parcel will not recognize this as a file and not precess in its manner
+
+  navigator.serviceWorker
+    .register(sw)
+    .then(registration => {
+      registration.onupdatefound = () => {
+        const installingWorker = registration.installing;
+        if (installingWorker == null) {
+          return;
+        }
+        installingWorker.onstatechange = () => {
+          if (installingWorker.state === "installed") {
+            if (navigator.serviceWorker.controller) {
+              console.log(
+                "New content is available and will be used when all " +
+                "tabs for this page are closed. See https://bit.ly/CRA-PWA."
+              );
+            } else {
+              console.log("Content is cached for offline use.");
+            }
+          }
+        };
+      };
+    })
+    .catch(error => {
+      console.error("Error during service worker registration:", error);
+    });
+</script>
 </body>
 </html>
