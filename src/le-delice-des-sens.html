@@ -60,8 +60,9 @@
     <div class="restaurant__title">
       <h1>Le delice des sens</h1>
       <div class="like__button">
-        <input id="heart-2" type="checkbox">
-        <label for="heart-2" class="heart__container">
+        <input id="heart" type="checkbox" aria-describedby="label-heart">
+        <label id="label-heart" for="heart" class="heart__container">
+          <span class="sr-only">Ajouter au favoris</span>
           <svg class="heart__stroke" height="1.5rem" width="1.5rem"  viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg">
             <path d="M 0.5 0.945312 C 0.484375 0.945312 0.472656 0.9375 0.460938 0.929688 C 0.421875 0.894531 0.382812 0.859375 0.347656 0.832031 C 0.246094 0.746094 0.160156 0.671875 0.0976562 0.597656 C 0.03125 0.515625 0 0.441406 0 0.355469 C 0 0.273438 0.0273438 0.195312 0.078125 0.140625 C 0.132812 0.0859375 0.203125 0.0546875 0.28125 0.0546875 C 0.335938 0.0546875 0.390625 0.0742188 0.4375 0.109375 C 0.460938 0.128906 0.480469 0.148438 0.5 0.175781 C 0.519531 0.148438 0.539062 0.128906 0.5625 0.109375 C 0.609375 0.0742188 0.664062 0.0546875 0.71875 0.0546875 C 0.796875 0.0546875 0.867188 0.0859375 0.921875 0.140625 C 0.972656 0.195312 1 0.273438 1 0.355469 C 1 0.441406 0.96875 0.515625 0.902344 0.597656 C 0.839844 0.671875 0.753906 0.746094 0.652344 0.832031 C 0.617188 0.859375 0.578125 0.894531 0.539062 0.929688 C 0.527344 0.9375 0.515625 0.945312 0.5 0.945312 Z M 0.28125 0.113281 C 0.21875 0.113281 0.164062 0.136719 0.121094 0.179688 C 0.0820312 0.226562 0.0585938 0.289062 0.0585938 0.355469 C 0.0585938 0.425781 0.0859375 0.488281 0.144531 0.5625 C 0.203125 0.628906 0.285156 0.703125 0.386719 0.789062 C 0.421875 0.816406 0.460938 0.851562 0.5 0.886719 C 0.539062 0.851562 0.578125 0.816406 0.613281 0.789062 C 0.714844 0.703125 0.796875 0.628906 0.855469 0.5625 C 0.914062 0.488281 0.941406 0.425781 0.941406 0.355469 C 0.941406 0.289062 0.917969 0.226562 0.878906 0.179688 C 0.835938 0.136719 0.78125 0.113281 0.71875 0.113281 C 0.675781 0.113281 0.636719 0.128906 0.597656 0.15625 C 0.566406 0.179688 0.542969 0.210938 0.53125 0.234375 C 0.523438 0.246094 0.511719 0.25 0.5 0.25 C 0.488281 0.25 0.476562 0.246094 0.46875 0.234375 C 0.457031 0.210938 0.433594 0.179688 0.402344 0.15625 C 0.363281 0.128906 0.324219 0.113281 0.28125 0.113281 Z M 0.28125 0.113281 "/>
           </svg>
@@ -75,8 +76,9 @@
 
       <div class="items__list">
         <div class="item">
-          <input id="item-1" type="checkbox">
-          <label for="item-1" class="item__container">
+          <input id="item-1" type="checkbox" aria-describedby="label-item-1">
+          <label id="label-item-1" for="item-1" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Tartare de thon</h3>
@@ -91,8 +93,9 @@
         </div>
 
         <div class="item">
-          <input id="item-2" type="checkbox">
-          <label for="item-2" class="item__container">
+          <input id="item-2" type="checkbox" aria-describedby="label-item-2">
+          <label id="label-item-2" for="item-2" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Bouchée de homard croustillant </h3>
@@ -107,8 +110,9 @@
         </div>
 
         <div class="item">
-          <input id="item-3" type="checkbox">
-          <label for="item-3" class="item__container">
+          <input id="item-3" type="checkbox" aria-describedby="label-item-3">
+          <label id="label-item-3" for="item-3" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Velouté de cèpes </h3>
@@ -129,8 +133,9 @@
 
       <div class="items__list">
         <div class="item">
-          <input id="item-4" type="checkbox">
-          <label for="item-4" class="item__container">
+          <input id="item-4" type="checkbox" aria-describedby="label-item-4">
+          <label id="label-item-4" for="item-4" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Poulet rôti aux herbes de Provence</h3>
@@ -145,8 +150,9 @@
         </div>
 
         <div class="item">
-          <input id="item-5" type="checkbox">
-          <label for="item-5" class="item__container">
+          <input id="item-5" type="checkbox" aria-describedby="label-item-5">
+          <label id="label-item-5" for="item-5" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Langouste rôtie </h3>
@@ -161,8 +167,9 @@
         </div>
 
         <div class="item">
-          <input id="item-6" type="checkbox">
-          <label for="item-6" class="item__container">
+          <input id="item-6" type="checkbox" aria-describedby="label-item-6">
+          <label id="label-item-6" for="item-6" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Côte de boeuf Angus </h3>
@@ -183,8 +190,9 @@
 
       <div class="items__list">
         <div class="item">
-          <input id="item-7" type="checkbox">
-          <label for="item-7" class="item__container">
+          <input id="item-7" type="checkbox" aria-describedby="label-item-7">
+          <label id="label-item-7" for="item-7" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Farandole de desserts</h3>
@@ -199,8 +207,9 @@
         </div>
 
         <div class="item">
-          <input id="item-8" type="checkbox">
-          <label for="item-8" class="item__container">
+          <input id="item-8" type="checkbox" aria-describedby="label-item-8">
+          <label id="label-item-8" for="item-8" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Crème brulée</h3>
@@ -215,8 +224,9 @@
         </div>
 
         <div class="item">
-          <input id="item-9" type="checkbox">
-          <label for="item-9" class="item__container">
+          <input id="item-9" type="checkbox" aria-describedby="label-item-9">
+          <label id="label-item-9" for="item-9" class="item__container">
+            <span class="sr-only">Ajouter au panier</span>
             <div class="item__content">
               <div class="item__info">
                 <h3 class="item__name">Tiramisu </h3>
